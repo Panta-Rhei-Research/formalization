@@ -1,0 +1,168 @@
+<a id="top"></a>
+<style>
+  .pr-landing { max-width: 800px; margin: 0 auto; padding: 2em 1em; }
+  .pr-landing .subtitle { color: var(--implicit-arg-text-color, #32415b); margin-top: 0; font-size: 1.1em; }
+  .pr-landing hr { border: none; border-top: 1px solid var(--hamburger-border-color, #dce5f2); margin: 1.5em 0; }
+  .pr-landing table { border-collapse: collapse; width: 100%; }
+  .pr-landing td, .pr-landing th { padding: 6px 12px; }
+  .pr-landing .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .pr-landing .book-table th { text-align: left; border-bottom: 2px solid var(--hamburger-border-color, #dce5f2); font-weight: 600; }
+  .pr-landing .book-table th.num { text-align: right; }
+  .pr-landing .book-table tr { border-bottom: 1px solid var(--hamburger-border-color, #dce5f2); transition: background 200ms cubic-bezier(.22,1,.36,1); }
+  .pr-landing .book-table tr:hover { background: var(--pr-accent-soft, rgba(178,143,255,0.06)); }
+  .pr-landing .book-table tr:last-child { border-bottom: none; }
+  .pr-landing .glance td { padding: 4px 12px; }
+  .pr-landing ul { line-height: 1.8; }
+  .pr-landing .footer-note { color: var(--implicit-arg-text-color, #32415b); font-size: 0.85em; text-align: center; }
+  .pr-landing .footer-note a { color: var(--implicit-arg-text-color, #32415b); }
+  /* Book spectral colors */
+  .pr-landing .book-i { color: #8fb6ff; }
+  .pr-landing .book-ii { color: #b08cff; }
+  .pr-landing .book-iii { color: #86efff; }
+  .pr-landing .book-iv { color: #95f3a1; }
+  .pr-landing .book-v { color: #ffb24d; }
+  .pr-landing .book-vi { color: #ff6156; }
+  .pr-landing .book-vii { color: #c8d4e8; }
+</style>
+
+<div class="pr-landing">
+
+<h1 style="margin-bottom: 0.3em;">TauLib &mdash; API Documentation</h1>
+<p class="subtitle">
+  Mechanized Formalization of Category &tau;
+</p>
+
+<p>
+  <strong>TauLib</strong> is a 125,000-line Lean 4 formalization of
+  <strong>Category &tau;</strong> &mdash; a categorical framework built from
+  7 axioms (K0&ndash;K6) on 5 generators (&alpha;, &pi;, &gamma;, &eta;, &omega;)
+  with a single primitive iterator &rho;. All mathematical structures are built
+  from scratch; Mathlib is used for proof tactics only.
+</p>
+<p>
+  Companion to the 7-book
+  <a href="https://panta-rhei.site">Panta Rhei</a> series
+  by Thorsten Fuchs and Anna-Sophie Fuchs (2nd Edition, 2026).
+</p>
+
+<hr>
+
+<h2>Library at a Glance</h2>
+
+<table class="glance">
+  <tr><td><strong>Source files</strong></td>
+      <td class="num">450</td></tr>
+  <tr><td><strong>Lines of Lean 4</strong></td>
+      <td class="num">125,771</td></tr>
+  <tr><td><strong>Theorems &amp; lemmas</strong></td>
+      <td class="num">4,332</td></tr>
+  <tr><td><strong>Definitions</strong></td>
+      <td class="num">3,542</td></tr>
+  <tr><td><strong>Computations (<code>#eval</code>)</strong></td>
+      <td class="num">3,721</td></tr>
+  <tr><td><strong>Axioms</strong></td>
+      <td class="num">4 (3 conjectural, 1 structural)</td></tr>
+  <tr><td><strong>Sorry</strong></td>
+      <td class="num">3 (Book VII only)</td></tr>
+  <tr><td><strong>Mathlib usage</strong></td>
+      <td class="num">Tactics only &mdash; all math from scratch</td></tr>
+</table>
+
+<hr>
+
+<h2>Browse by Book</h2>
+
+<table class="book-table">
+  <tr>
+    <th>Book</th>
+    <th class="num">Modules</th>
+    <th>Start Here</th>
+  </tr>
+  <tr>
+    <td><a href="TauLib/BookI.html"><span class="book-i">I</span> &mdash; Categorical Foundations</a></td>
+    <td class="num">94</td>
+    <td><a href="TauLib/BookI/Kernel/Signature.html">Kernel.Signature</a></td>
+  </tr>
+  <tr>
+    <td><a href="TauLib/BookII.html"><span class="book-ii">II</span> &mdash; Categorical Holomorphy</a></td>
+    <td class="num">65</td>
+    <td><a href="TauLib/BookII/Interior/Tau3Fibration.html">Interior.Tau3Fibration</a></td>
+  </tr>
+  <tr>
+    <td><a href="TauLib/BookIII.html"><span class="book-iii">III</span> &mdash; Categorical Spectrum</a></td>
+    <td class="num">70</td>
+    <td><a href="TauLib/BookIII/Enrichment/CanonicalLadder.html">Enrichment.CanonicalLadder</a></td>
+  </tr>
+  <tr>
+    <td><a href="TauLib/BookIV.html"><span class="book-iv">IV</span> &mdash; Categorical Microcosm</a></td>
+    <td class="num">89</td>
+    <td><a href="TauLib/BookIV/Sectors/SectorParameters.html">Sectors.SectorParameters</a></td>
+  </tr>
+  <tr>
+    <td><a href="TauLib/BookV.html"><span class="book-v">V</span> &mdash; Categorical Macrocosm</a></td>
+    <td class="num">80</td>
+    <td><a href="TauLib/BookV/Gravity/GravitationalConstant.html">Gravity.GravitationalConstant</a></td>
+  </tr>
+  <tr>
+    <td><a href="TauLib/BookVI.html"><span class="book-vi">VI</span> &mdash; Categorical Life</a></td>
+    <td class="num">30</td>
+    <td><a href="TauLib/BookVI/LifeCore/Distinction.html">LifeCore.Distinction</a></td>
+  </tr>
+  <tr>
+    <td><a href="TauLib/BookVII.html"><span class="book-vii">VII</span> &mdash; Categorical Metaphysics</a></td>
+    <td class="num">7</td>
+    <td><a href="TauLib/BookVII/Meta/Saturation.html">Meta.Saturation</a></td>
+  </tr>
+</table>
+
+<hr>
+
+<h2>Reading Paths</h2>
+
+<ul>
+  <li><strong>Mathematicians:</strong>
+    <a href="TauLib/BookI/Kernel/Signature.html">Signature</a> &rarr;
+    <a href="TauLib/BookI/Kernel/Axioms.html">Axioms</a> &rarr;
+    <a href="TauLib/BookI/Orbit/Rigidity.html">Rigidity</a> &rarr;
+    <a href="TauLib/BookI/Boundary/Iota.html">Iota</a> &rarr;
+    <a href="TauLib/BookII/CentralTheorem/CentralTheorem.html">Central Theorem</a>
+  </li>
+  <li><strong>Physicists:</strong>
+    <a href="TauLib/Tour/Physics.html">Tour.Physics</a> &rarr;
+    <a href="TauLib/BookIV/Electroweak/EWSynthesis.html">EWSynthesis</a> &rarr;
+    <a href="TauLib/BookV/Cosmology/CMBSpectrum.html">CMBSpectrum</a> &rarr;
+    <a href="TauLib/BookV/Astrophysics/RotationCurves.html">RotationCurves</a>
+  </li>
+  <li><strong>Lean users:</strong>
+    <a href="TauLib/Tour/Foundations.html">Tour.Foundations</a> &rarr;
+    <a href="TauLib/Tour/CentralTheorem.html">Tour.CentralTheorem</a> &rarr;
+    <a href="TauLib/Tour/Physics.html">Tour.Physics</a>
+  </li>
+  <li><strong>Philosophers:</strong>
+    <a href="TauLib/BookVII/Meta/Saturation.html">Saturation</a> &rarr;
+    <a href="TauLib/BookVII/Ethics/CIProof.html">CIProof</a> &rarr;
+    <a href="TauLib/BookVII/Final/Boundary.html">Boundary</a>
+  </li>
+</ul>
+
+<hr>
+
+<h2>Additional Resources</h2>
+
+<ul>
+  <li><a href="stats.html">Statistics Dashboard</a> &mdash;
+      Per-book formalization coverage, scope breakdown, and registry metrics</li>
+  <li><a href="depgraph.html">Dependency Graph</a> &mdash;
+      Interactive visualization of the 4,500+ entry mathematical registry</li>
+  <li><a href="TauLib/BookI.html">Book I &mdash; Start of the Foundation</a> &mdash;
+      Where everything begins: 5 generators, 7 axioms, &rho; operator</li>
+</ul>
+
+<hr>
+
+<p class="footer-note">
+  Generated by <a href="https://github.com/leanprover/doc-gen4">doc-gen4</a>
+  with Panta Rhei theme
+</p>
+
+</div>
